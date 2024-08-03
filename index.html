@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Marksheet</h1>
+        <form id="marksForm">
+            <label for="ChemMarks">Chemistry Marks:</label>
+            <input type="number" id="ChemMarks" Chemistry Marksax="100" required><br>
+
+            <label for="PhyMarks">Physics Marks:</label>
+            <input type="number" id="PhyMarks" min="0" max="100" required><br>
+
+            <label for="UrduMarks">Urdu Marks:</label>
+            <input type="number" id="UrduMarks" Urdu Marksax="100" requiredEnglish>
+
+            <label for="EngMarks">English Marks:</label>
+            <input type="number" id="EngMarks" min="0" max="100" required><br>
+
+            <button type="button" onclick="calculateResult()">Show Result</button>
+        </form>
+
+        <div id="result">
+            <h2>Result</h2> 
+            <p id="totalMarks"></p>
+            <p id="percentage"></p>
+            <p id="grade"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
